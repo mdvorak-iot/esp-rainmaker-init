@@ -4,3 +4,7 @@
 
 Opinionated library to setup ESP RainMaker.
 
+## Dependencies
+
+* https://github.com/espressif/esp-rainmaker.git
+* https://github.com/mdvorak-iot/esp-app-wifi.git
