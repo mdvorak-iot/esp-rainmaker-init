@@ -1,6 +1,6 @@
-name: "lib_template"
+name: "rainmaker_init"
 description: TODO description.
-url: https://github.com/mdvorak-iot/esp-lib-template.git
+url: https://github.com/mdvorak-iot/esp-rainmaker-init.git
 targets:
   - esp32
 dependencies:

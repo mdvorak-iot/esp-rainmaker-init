@@ -1,5 +1,6 @@
-# esp-lib-template
+# esp-rainmaker-init
 
-![platformio build](https://github.com/mdvorak-iot/esp-lib-template/workflows/platformio%20build/badge.svg)
+![platformio build](https://github.com/mdvorak-iot/esp-rainmaker-init/workflows/platformio%20build/badge.svg)
 
-TODO Description
+Opinionated library to setup ESP RainMaker.
+
