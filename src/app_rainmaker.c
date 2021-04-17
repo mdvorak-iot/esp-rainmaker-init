@@ -5,7 +5,6 @@
 #include <esp_ota_ops.h>
 #include <esp_rmaker_core.h>
 #include <esp_rmaker_ota.h>
-#include <esp_rmaker_schedule.h>
 #include <esp_wifi.h>
 
 static const char TAG[] = "app_rainmaker";
@@ -56,9 +55,6 @@ esp_err_t app_rmaker_init(const char *node_name, esp_rmaker_node_t **out_node)
     if (err != ESP_OK) goto error;
 
     // Initialize
-    err = esp_rmaker_schedule_enable();
-    if (err != ESP_OK) goto error;
-
     esp_rmaker_ota_config_t ota_config = {
         .server_cert = (char *)ESP_RMAKER_OTA_DEFAULT_SERVER_CERT,
     };
