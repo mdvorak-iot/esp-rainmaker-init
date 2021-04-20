@@ -12,7 +12,7 @@ static const char TAG[] = "app_rainmaker";
 static void print_qrcode_handler(__unused void *arg, __unused esp_event_base_t event_base,
                                  __unused int32_t event_id, __unused void *event_data)
 {
-    char payload[200];
+    char payload[200] = {};
     // {"ver":"%s","name":"%s","pop":"%s","transport":"%s"}
     snprintf(payload, sizeof(payload), "%%7B%%22ver%%22%%3A%%22%s%%22%%2C%%22name%%22%%3A%%22%s%%22%%2C%%22pop%%22%%3A%%22%s%%22%%2C%%22transport%%22%%3A%%22%s%%22%%7D",
              "v1", app_wifi_prov_get_service_name(), app_wifi_get_prov_pop(), APP_WIFI_PROV_TRANSPORT);
